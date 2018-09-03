@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center">Relevés de compteurs</h1>
+            <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Identifiant PDL</th>
+                    <th>Date début</th>
+                    <th>Date fin</th>
+                    <th>Index début</th>
+                    <th>Index fin</th>
+                    <th>Consommation</th>
+                </tr>
+                
+                <tr>
+                    <td><%= @report.pdl_id %></td>
+                    <td><%= @report.starting_date %></td>
+                    <td><%= @report.ending_date %></td>
+                    <td><%= @report.starting_index %></td>
+                    <td><%= @report.ending_index %></td>
+                    <td><%= @report.power_consumption %></td>
+                </tr>
+            
+                <tr>
+                <td><%= @report.pdl_id_second %></td>
+                <td><%= @report.starting_date_second %></td>
+                <td><%= @report.ending_date_second %></td>
+                <td><%= @report.starting_index_second %></td>
+                <td><%= @report.ending_index_second %></td>
+                <td><%= @report.power_consumption_second %></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
